@@ -1,0 +1,15 @@
+version: '3'
+services:
+ microservicio01:
+  image: microservicio01
+  ports:
+   - "8181:8181"
+  restart: always
+ microservicio02:
+  image: microservicio02
+  ports:
+   - "8282:8282"
+  depends_on:
+   - microservicio01
+   
+   
