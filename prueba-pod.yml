@@ -6,13 +6,13 @@ metadata:
   app: pruebaapp
 spec:
  containers:
-  -name: microservicio01
-   image: stevenalvarado/microservicio01
-   ports: 
-    -containerPort: 8181
-  -name: microservicio012
-   image: stevenalvarado/microservicio02
-   ports: 
-    -containerPort: 8282
+  - name: microservicio01
+    image: stevenalvarado/microservicio01
+    ports: 
+     - containerPort: 8181
+  - name: microservicio012
+    image: stevenalvarado/microservicio02
+    ports: 
+     - containerPort: 8282
    
    
