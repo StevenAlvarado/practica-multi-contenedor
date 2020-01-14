@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: prueba-service
+spec:
+ selector:
+  app: pruebaapp
+ ports:
+  -port: 80
+   targetPort:8181
+ type: NodePort
+ 
+ 

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+ name: prueba-deployment
+spec:
+ replicas: 3
+ template:
+  metadata:
+   labels:
+    app: prueba-deployment
+  spec:
+   containers:
+    -name: microservicio01
+     image: stevenalvarado/microservicio01
+    ports: 
+     -containerPort: 8181
+   -name: microservicio012
+    image: stevenalvarado/microservicio02
+    ports: 
+     -containerPort: 8282
+
+ 
+ 
