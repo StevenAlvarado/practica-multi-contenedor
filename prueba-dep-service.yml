@@ -7,7 +7,7 @@ spec:
   app: prueba-deployment
  ports:
   - port: 80
-    targetPort:8181
+    targetPort: 8181
  type: NodePort
  
  
